@@ -1,5 +1,13 @@
 # AMLOfficer-Test-Scenarios
 
+**Task:**  
+Your task is to test the Business Account setup flow starting from the moment the user opens the "Add Business Account" pop-up in the web interface.  
+Go through each step: accepting terms and conditions, entering a valid email, verifying it with the code, creating a password, entering company and owner names, and inviting team members.  
+Verify that all validations work correctly (e.g., email format, code match, password strength, valid teammate emails).
+
+[Reference Design/Spec](https://drive.google.com/file/d/1rSLSdITvoYT0TzmVW4qn2rHftp9FprgM/view)
+
+
 ## Table of Contents
 - [Test Scenarios](#test-scenarios)
 - [Bug Reports](#bug-reports)
@@ -21,7 +29,7 @@
 **Steps:**
 1. Read the Terms and Conditions text.
 2. Check the "I accept the terms" checkbox.
-3. Click the "Continue Setup" button.  
+3. Click the "Continue Setup" button.
 **Expected Result:** Proceeding to Step 2 is only possible after accepting the terms.
 
 | Test Case ID | Type      | Preconditions                  | Steps                                                                 | Expected Result                                      | Actual Result               |
@@ -37,7 +45,7 @@
 **Objective:** Verify email input validation and correct UI behavior.  
 **Steps:**
 1. Enter an email address.
-2. Click the "Continue Setup" button.  
+2. Click the "Continue Setup" button.
 **Expected Result:** Proceeding to the next step is only allowed with a valid email address.
 
 | Test Case ID | Type      | Preconditions                                | Steps                                                                 | Expected Result                                     | Actual Result                  |
@@ -66,7 +74,7 @@
 **Objective:** Confirm that the password meets security requirements.  
 **Steps:**
 1. Enter a password.
-2. Observe the UI response.  
+2. Observe the UI response.
 **Expected Result:** Validation works correctly; weak passwords prevent further progress.
 
 | Test Case ID | Type      | Preconditions                                | Steps                                                     | Expected Result                                  | Actual Result                 |
@@ -80,7 +88,7 @@
 **Objective:** Ensure both fields are mandatory for progress.  
 **Steps:**
 1. Enter the company name.
-2. Enter the first and last name.  
+2. Enter the first and last name.
 **Expected Result:** User can proceed only if all fields are filled in.
 
 | Test Case ID | Type      | Preconditions                                | Steps                                                    | Expected Result                                    | Actual Result                 |
@@ -94,7 +102,7 @@
 **Steps:**
 1. Enter a valid teammate email.
 2. Select a role from the dropdown.
-3. Click the "Add" button.  
+3. Click the "Add" button.
 **Expected Result:** The teammate is added successfully only with a valid email and selected role.
 
 | Test Case ID | Type      | Preconditions                                | Steps                                                                                     | Expected Result                                      | Actual Result                  |
@@ -107,7 +115,7 @@
 **Test Scenario**  
 **Objective:** Ensure invitations can only be sent after adding at least one team member.  
 **Steps:**
-1. Click the "Send Invitations" button.  
+1. Click the "Send Invitations" button.
 **Expected Result:** If no team members are added, an error message is displayed.
 
 | Test Case ID | Type      | Preconditions                                | Steps                                         | Expected Result                                   | Actual Result                  |
