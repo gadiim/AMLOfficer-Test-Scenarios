@@ -1,11 +1,15 @@
 # AMLOfficer-Test-Scenarios
 
-**Task:**  
-Your task is to test the Business Account setup flow starting from the moment the user opens the "Add Business Account" pop-up in the web interface.  
-Go through each step: accepting terms and conditions, entering a valid email, verifying it with the code, creating a password, entering company and owner names, and inviting team members.  
-Verify that all validations work correctly (e.g., email format, code match, password strength, valid teammate emails).
+**Task:**Your task is to test the Business Account setup flow starting from the moment the user opens the "Add Business Account" pop-up in the web interface. Go through each step: accepting terms and conditions, entering a valid email, verifying it with the code, creating a password, entering company and owner names, and inviting team members. Verify that all validations work correctly (e.g. email format, code match, password strength, valid teammate emails). 
 
-[Reference Design/Spec](https://drive.google.com/file/d/1rSLSdITvoYT0TzmVW4qn2rHftp9FprgM/view)
+In your response, please include: 
+1 Write test scenarios that cover both positive and negative cases based on the flow described above.
+2 Identify and document 6-8 issues found during testing in the form of bug reports.
+3 Prepare a short test summary describing the results of your testing.
+4 Suggest any improvements related to usability or the user experience (optional but welcome).
+
+
+[FLOW](https://drive.google.com/file/d/1rSLSdITvoYT0TzmVW4qn2rHftp9FprgM/view)
 
 
 ## Table of Contents
